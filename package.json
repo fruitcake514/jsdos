@@ -1,0 +1,12 @@
+{
+  "name": "exogallery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dockerized eXoDOS/eXoWin3x web gallery with one-click play",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

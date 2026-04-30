@@ -1,0 +1,13 @@
+services:
+  exogallery:
+    build: .
+    container_name: exogallery
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - EXODOS_PATH=/library/exodos
+      - MAX_GAMES=5000
+    volumes:
+      - ./data:/library:ro
+    restart: unless-stopped
