@@ -1,6 +1,7 @@
 services:
   exogallery:
-    build: .
+    build:
+      context: https://github.com/fruitcake514/jsdos.git
     container_name: exogallery
     ports:
       - "8080:8080"
